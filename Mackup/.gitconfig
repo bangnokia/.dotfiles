@@ -1,0 +1,7 @@
+[user]
+	name = bangnokia
+	email = bangnokia@gmail.com
+[pull]
+	rebase = false
+[core]
+	excludesFile = /Users/daudau/.gitignore

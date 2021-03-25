@@ -1,0 +1,58 @@
+# short command
+alias ll='ls -lah'
+alias deploy='dep deploy'
+alias bash-reload='source ~/.bash_profile'
+alias zsh-reload='source ~/.zshrc'
+alias tmux="TERM=screen-256color-bce tmux -u"
+alias artisan="php artisan"
+alias a="php artisan"
+alias gst="git status"
+alias wip="git add . && git commit -m \"work in progress\" && git push origin HEAD" 
+alias phpunit="phpunit --colors"
+alias clr="clear"
+alias web="cd ~/Code"
+alias cda="composer dump-autoload"
+
+# quick edit config files
+alias eal="vim ~/.alias"
+alias ezsh="vim ~/.zshrc"
+alias ebash="vim ~/.bash_profile"
+alias envim="vim ~/.config/nvim/init.vim"
+alias eala="vim ~/.config/alacritty/alacritty.yml"
+
+# ssh aliases
+alias ssh.daudaucc='ssh daudaucc@198.252.101.137'
+alias ssh.noax03="ssh root@87.238.165.56"
+alias ssh.nomeo192='ssh bangn@62.213.218.192'
+alias ssh.controlstag='ssh bangn@62.213.218.127'
+alias ssh.hrminfodev='ssh hrminfo@185.59.17.50'
+alias ssh.hrminfo='ssh hrminfo@31.186.172.90'
+alias ssh.hostenginetest='ssh root@87.238.167.6'
+alias ssh.adstool='ssh bangnokia@35.226.180.243'
+alias ssh.staging='ssh bangn@62.213.219.92'
+alias ssh.status='ssh bangn@116.203.89.184'
+alias ssh.brickscompare='ssh root@178.128.110.193'
+
+# my vps
+alias ssh.do190='ssh root@178.128.55.190'
+
+# php versions aliases
+alias php72='/usr/local/opt/php@7.2/bin/php'
+alias php71='/usr/local/opt/php@7.1/bin/php'
+alias php70='/usr/local/opt/php@7.0/bin/php'
+
+# laravel aliases
+alias mfs='php artisan migrate:fresh --seed'
+alias mf='php artisan migrate:fresh'
+alias pu='vendor/bin/phpunit'
+alias pe='vendor/bin/pest'
+
+# home brew
+alias bsl='brew services list'
+alias bs='brew services'
+
+# docker
+alias dce='docker-compose exec'
+alias dkc='docker-compose'
+
+eval $(thefuck --alias)

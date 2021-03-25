@@ -1,0 +1,15 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "cmd+i",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "shift+cmd+o",
+        "command": "workbench.action.gotoSymbol"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.panel.terminal.focus"
+    }
+]

@@ -1,0 +1,26 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"AdvancedNewFile",
+		"CloseOtherWindows",
+		"DocBlockr",
+		"Emmet",
+		"Inspired GitHub Color Scheme",
+		"Laravel Blade Highlighter",
+		"Material Theme",
+		"NeoVintageous",
+		"Package Control",
+		"PHP Companion",
+		"SideBarEnhancements",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"View In Browser",
+		"Vue Syntax Highlight",
+		"WakaTime",
+		"Tabnine"
+	]
+}
