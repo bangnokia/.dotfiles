@@ -14,14 +14,14 @@ alias web="cd ~/Code"
 alias cda="composer dump-autoload"
 
 # quick edit config files
-alias eal="vim ~/.alias"
-alias ezsh="vim ~/.zshrc"
-alias ebash="vim ~/.bash_profile"
-alias envim="vim ~/.config/nvim/init.vim"
-alias eala="vim ~/.config/alacritty/alacritty.yml"
+alias eal="nvim ~/.alias"
+alias ezsh="nvim ~/.zshrc"
+alias ebash="nvim ~/.bash_profile"
+alias envim="nvim ~/.config/nvim/init.vim"
+alias eac="nvim ~/.config/alacritty/alacritty.yml"
 
 # ssh aliases
-alias ssh.daudaucc='ssh daudaucc@198.252.101.137'
+alias ssh.daudaucc='ssh daudaucc@172.96.191.24'
 alias ssh.brickscompare='ssh root@178.128.110.193'
 
 # my vps

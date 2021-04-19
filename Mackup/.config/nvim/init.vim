@@ -3,7 +3,7 @@ call plug#begin()
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'neoclide/coc.nvim', {'tag': '*', 'branch': 'release'}
 Plug 'wakatime/vim-wakatime'
-Plug 'scrooloose/nerdcommenter'
+"Plug 'scrooloose/nerdcommenter'
 Plug 'morhetz/gruvbox'
 Plug 'vim-test/vim-test'
 Plug '907th/vim-auto-save'
@@ -12,8 +12,8 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'simeji/winresizer'
 Plug 'jwalton512/vim-blade'
 Plug 'alvan/vim-closetag'
-Plug 'camspiers/animate.vim'
-Plug 'camspiers/lens.vim'
+"Plug 'camspiers/animate.vim'
+"Plug 'camspiers/lens.vim'
 
 call plug#end()
 
@@ -25,9 +25,7 @@ autocmd ColorScheme * highlight! link SignColumn LineNr
 filetype plugin indent on
 set ic
 set noswapfile
-set tabstop=4
-set shiftwidth=4
-set expandtab
+set tabstop=4 shiftwidth=4 expandtab
 set splitright
 set cursorline
 set ignorecase
@@ -97,7 +95,7 @@ let NERDTreeShowHidden = 1
 "---- coc.vim
 set hidden
 set nobackup
-set updatetime=200
+set updatetime=100
 set signcolumn=yes
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -133,10 +131,18 @@ map <C-p> :Files<cr>
 map <C-e> :Buffers<cr>
 map <C-i> :BLines<cr>
 nmap <Leader>f :Rg
+let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',
   \ 'ctrl-h': 'split',
   \ 'ctrl-v': 'vsplit' }
+let g:fzf_layout = {
+    \ 'window': {
+        \'width': 0.5,
+        \'height': 0.6,
+        \'highlight': 'Keyword'
+    \ }
+\ }
 command! -bang -nargs=? -complete=dir BLines
     \ call fzf#vim#buffer_lines(<q-args>, {'options': ['--layout=reverse']}, <bang>0)
 
@@ -149,6 +155,7 @@ let g:closetag_shortcut = '>'
 " len.vim
 let g:lens#width_resize_max = 120
 let g:lens#disabled_filetypes = ['nerdtree', 'fzf']
+let g:lens#animate = 1
 
 "---- Auto source init.vim
 autocmd! bufwritepost ~/.config/nvim/init.vim source ~/.config/nvim/init.vim

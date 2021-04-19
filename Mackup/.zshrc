@@ -107,7 +107,7 @@ export PATH="/usr/local/sbin:$PATH"
 
 if type rg &> /dev/null; then
   export FZF_DEFAULT_COMMAND='rg --files --hidden -g "!.git/"'
-  export FZF_DEFAULT_OPTS='-m --height 50% --layout=reverse --border'
+  export FZF_DEFAULT_OPTS='-m --height 50% --layout=reverse --border --no-preview'
 fi
 
 
