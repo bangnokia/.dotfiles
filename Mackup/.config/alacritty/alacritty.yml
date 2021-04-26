@@ -31,7 +31,7 @@ window:
   # fall back to the window manager's recommended size.
   dimensions:
     columns: 125
-    lines: 36
+    lines: 20
 
   # Window position (changes require restart)
   #
@@ -61,7 +61,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background and no title bar buttons
-  decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -157,14 +157,14 @@ font:
   # spacing.
   offset:
     x: 0
-    y: 10
+    y: 12
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
   # right, increasing `y` moves the glyph upward.
   glyph_offset:
     x: 0
-    y: 5
+    y: 6
 
   # Thin stroke font rendering (macOS only)
   #
@@ -357,7 +357,7 @@ font:
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-#background_opacity: 1.0
+background_opacity: 1.0
 
 #selection:
   # This string contains all characters that are used as separators for
@@ -428,7 +428,7 @@ font:
 #
 # Directory the shell is started in. If this is unset, or `None`, the working
 # directory of the parent process will be used.
-#working_directory: None
+working_directory: /Users/daudau/Code
 
 # Send ESC (\x1b) before characters when alt is pressed.
 #alt_send_esc: true
@@ -618,6 +618,7 @@ font:
 #       First non-empty cell in this terminal row, or first non-empty cell of
 #       the line when already at the first cell of the row.
 #   - High
+#   ojj
 #       Top of the screen.
 #   - Middle
 #       Center of the screen.

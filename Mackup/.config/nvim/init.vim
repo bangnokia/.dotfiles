@@ -12,6 +12,7 @@ Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'simeji/winresizer'
 Plug 'jwalton512/vim-blade'
 Plug 'alvan/vim-closetag'
+Plug 'tpope/vim-surround'
 "Plug 'camspiers/animate.vim'
 "Plug 'camspiers/lens.vim'
 
@@ -54,8 +55,11 @@ nmap <Leader>q :q<cr>
 nmap <Leader>w :w<cr>
 nmap <silent> gn :tabnext<cr>
 nmap <silent> gp :tabprevious<cr>
+nmap <C-S-h> <C-w>h
+nmap <C-S-j> <C-w>j
+nmap <C-S-k> <C-w>k
+nmap <C-S-l> <C-w>l
 
-" open terminal in vsplit
 nmap <Leader>av :vsplit term://zsh<cr>
 " open terminal in split
 nmap <Leader>ah :split term://zsh<cr>
@@ -66,11 +70,6 @@ let g:auto_save_events = ['BufLeave', 'FocusLost', 'InsertLeave']
 
 " Easy resize window
 let g:winresizer_start_key = '<C-L>'
-
-"---- Laravel shortcut
-nmap <Leader>lr :e routes/web.php<cr>
-nmap <Leader>lra :e routes/api.php<cr>
-nmap <Leader>lck :e app/Console/Kernel.php<cr>
 
 "---- Test shortcut
 nmap <C-Shift-n> :TestNearest<cr>
@@ -159,4 +158,3 @@ let g:lens#animate = 1
 
 "---- Auto source init.vim
 autocmd! bufwritepost ~/.config/nvim/init.vim source ~/.config/nvim/init.vim
-
