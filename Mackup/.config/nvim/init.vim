@@ -15,6 +15,7 @@ Plug 'alvan/vim-closetag'
 Plug 'tpope/vim-surround'
 "Plug 'camspiers/animate.vim'
 "Plug 'camspiers/lens.vim'
+Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
 
@@ -69,7 +70,7 @@ let g:auto_save = 1
 let g:auto_save_events = ['BufLeave', 'FocusLost', 'InsertLeave']
 
 " Easy resize window
-let g:winresizer_start_key = '<C-L>'
+let g:winresizer_start_key = '<Leader>v'
 
 "---- Test shortcut
 nmap <C-Shift-n> :TestNearest<cr>
@@ -94,7 +95,7 @@ let NERDTreeShowHidden = 1
 "---- coc.vim
 set hidden
 set nobackup
-set updatetime=100
+set updatetime=50
 set signcolumn=yes
 
 inoremap <silent><expr> <c-space> coc#refresh()
@@ -102,6 +103,7 @@ nmap <silent> gd <Plug>(coc-definition)
 vmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
+nmap <leader>rn <Plug>(coc-rename)
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
