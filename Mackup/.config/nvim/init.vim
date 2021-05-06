@@ -25,6 +25,7 @@ autocmd ColorScheme * highlight! link SignColumn LineNr
 
 "---- UI
 filetype plugin indent on
+set guifont=Operator\ Mono\ Lig\:h15
 set ic
 set noswapfile
 set tabstop=4 shiftwidth=4 expandtab
@@ -51,7 +52,6 @@ autocmd BufWritePre *.php %s/\s\+$//e
 "---- Shortcut
 let mapleader = ','
 nmap <Leader>env :tabedit ~/.config/nvim/init.vim<cr>
-nmap <Leader>s /function 
 nmap <Leader>q :q<cr>
 nmap <Leader>w :w<cr>
 nmap <silent> gn :tabnext<cr>
@@ -104,6 +104,8 @@ vmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gr <Plug>(coc-references)
 nmap <leader>rn <Plug>(coc-rename)
+xmap <leader>f  <Plug>(coc-format-selected)
+nmap <leader>f  <Plug>(coc-format-selected)
 
 " Use tab for trigger completion with characters ahead and navigate.
 " NOTE: Use command ':verbose imap <tab>' to make sure tab is not mapped by
@@ -131,7 +133,7 @@ map <Leader>c <plug>NERDCommenterToggle<CR>
 map <C-p> :Files<cr>
 map <C-e> :Buffers<cr>
 map <C-i> :BLines<cr>
-nmap <Leader>f :Rg
+nmap <Leader>s :Rg
 let g:fzf_preview_window = ['right:50%:hidden', 'ctrl-/']
 let g:fzf_action = {
   \ 'ctrl-t': 'tab split',

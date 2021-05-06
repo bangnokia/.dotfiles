@@ -23,6 +23,7 @@ alias eac="nvim ~/.config/alacritty/alacritty.yml"
 # ssh aliases
 alias ssh.daudaucc='ssh daudaucc@172.96.191.24'
 alias ssh.brickscompare='ssh root@178.128.110.193'
+alias ssh.hhtq='ssh ploi@128.199.94.144'
 
 # my vps
 alias ssh.do190='ssh root@178.128.55.190'
