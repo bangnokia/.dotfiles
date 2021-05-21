@@ -16,6 +16,7 @@ Plug 'tpope/vim-surround'
 "Plug 'camspiers/animate.vim'
 "Plug 'camspiers/lens.vim'
 Plug 'jiangmiao/auto-pairs'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 

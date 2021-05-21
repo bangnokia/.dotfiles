@@ -2,8 +2,8 @@
 	"atomic_save": false,
 	"auto_complete": false,
 	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Darker.tmTheme",
-	"font_face": "Fira Code",
-	"font_size": 15,
+	"font_face": "Operator Mono Lig",
+	"font_size": 16,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -24,5 +24,5 @@
 	"theme": "Material-Theme-Darker.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
 	"vintageous_use_ctrl_keys": true,
-	"vintageous_use_super_keys": false
+	"vintageous_use_super_keys": false,
 }

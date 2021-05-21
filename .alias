@@ -12,6 +12,7 @@ alias phpunit="phpunit --colors"
 alias clr="clear"
 alias web="cd ~/Code"
 alias cda="composer dump-autoload"
+alias tauri="npm run tauri" 
 
 # quick edit config files
 alias eal="nvim ~/.alias"
